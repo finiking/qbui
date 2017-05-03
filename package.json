@@ -1,0 +1,71 @@
+{
+  "name": "qbui",
+  "version": "1.0.0",
+  "description": "A Front-End UI framework for QBDC business",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run clear && better-npm-run dev",
+    "compile": "npm run clear && better-npm-run product",
+    "clear": "rm -r dist/*",
+    "test": "test"
+  },
+  "betterScripts": {
+    "dev": {
+      "command": "webpack-dev-server --hot --progress --colors",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "product": {
+      "command": "webpack --progress --profile --colors",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finiking/qbui.git"
+  },
+  "keywords": [
+    "Front-End",
+    "UI",
+    "Framework",
+    "CSS",
+    "JavaScript",
+    "LESS",
+    "ES2015"
+  ],
+  "author": "Fini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finiking/qbui/issues"
+  },
+  "homepage": "https://github.com/finiking/qbui#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "better-npm-run": "0.0.15",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.0",
+    "cssnano": "^3.10.0",
+    "debug": "^2.6.4",
+    "dotenv": "^4.0.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "fs-extra": "^2.1.2",
+    "html-webpack-plugin": "^2.28.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "optimize-css-assets-webpack-plugin": "^1.3.1",
+    "postcss-loader": "^1.3.3",
+    "precss": "^1.4.0",
+    "style-loader": "^0.16.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.4"
+  }
+}
