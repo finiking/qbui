@@ -4,14 +4,21 @@
   "description": "A Front-End UI framework for QBDC business",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run clear && better-npm-run dev",
-    "compile": "npm run clear && better-npm-run product",
-    "clear": "rm -r dist/*",
+    "server": "better-npm-run server",
+    "dev": "better-npm-run dev",
+    "compile": "better-npm-run product",
+    "clear": "rm -rf dist/*",
     "test": "test"
   },
   "betterScripts": {
-    "dev": {
+    "server": {
       "command": "webpack-dev-server --hot --progress --colors",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "dev": {
+      "command": "webpack --progress --profile --colors",
       "env": {
         "NODE_ENV": "development"
       }

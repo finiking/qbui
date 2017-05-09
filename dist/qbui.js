@@ -85,4 +85,3 @@ document.write('Hello QB UI');
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=qbui.js.map
